@@ -24,6 +24,18 @@ i++
 2. Mengapa variabel tertinggi diinisialisasi 0 dan terendah diinisialisasi 100? Apa yang
    terjadi jika variabel tertinggi diinisialisasi 100 dan terendah diinisialisasi 0?
 
+- double tertinggi = 0, terendah = 100;
+
+tertinggi = 0 digunakan untuk mulai dengan nilai yang sangat kecil (0) agar nilai mahasiswa pertama pun pasti lebih besar atau sama, sehingga bisa diperbarui dengan nilai yang sebenarnya.
+
+terendah = 100 digunakan untuk mulai dengan nilai yang sangat besar (100) agar nilai mahasiswa pertama pun pasti lebih kecil atau sama, sehingga bisa diperbarui dengan nilai yang sebenarnya.
+
+- double tertinggi = 100, terendah = 0;
+
+Jika semua nilai mahasiswa kurang dari 100, maka nilai tertinggi tidak akan pernah diperbarui, sehingga hasil tertinggi tetap 100 padahal tidak ada mahasiswa yang nilainya 100.
+
+Jika semua nilai mahasiswa lebih dari 0, maka nilai terendah tidak akan pernah diperbarui, sehingga hasil terendah tetap 0 padahal tidak ada mahasiswa yang nilainya 0.
+
 3. Jelaskan fungsi dan alur kerja dari potongan kode berikut!
 
 
