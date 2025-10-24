@@ -55,3 +55,19 @@ else tidak_lulus++;
 System.out.println("Jumlah Mahasiswa lulus: " + lulus);
 System.out.println("Jumlah Mahasiswa tidak lulus: " + tidak_lulus);
 ```
+
+## 2.2.3 Pertanyaan
+
+1. Pada potongan kode berikut, tentukan maksud dan kegunaan dari sintaks berikut:
+
+- nilai < 0 || nilai > 100
+
+di gunakan untuk melakukan validasi hanya nilai antara 0 - 100 saja yang bisa di masukkan
+
+- continue
+
+di gunakan untuk melakukan pelanjutan perulangan / melakukan skip
+
+2. Mengapa sintaks i++ dituliskan di akhir perulangan WHILE? Apa yang terjadi jika posisinya dituliskan di awal perulangan WHILE?
+3. Apabila jumlah mahasiswa yang dimasukkan adalah 19, berapa kali perulangan WHILE akan berjalan?
+4. Modifikasi kode program sehingga apabila terdapat mahasiswa yang mendapat nilai A, program menampilkan pesan tambahan "Bagus, pertahankan nilainya"!
