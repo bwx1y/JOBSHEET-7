@@ -78,3 +78,7 @@ maka akan di jalan sebanyak 19 kali mulai dari 0 - 18
 
 4. Modifikasi kode program sehingga apabila terdapat mahasiswa yang mendapat nilai A, program menampilkan pesan tambahan "Bagus, pertahankan nilainya"!
 
+saya menambahkan 
+```
+System.out.println("Bagus, pertahankan nilainya");
+```
