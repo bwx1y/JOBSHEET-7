@@ -82,3 +82,13 @@ saya menambahkan
 ```
 System.out.println("Bagus, pertahankan nilainya");
 ```
+
+## 2.3.3 Pertanyaan
+
+1. Pada penggunaan DO-WHILE ini, apabila nama pelanggan yang dimasukkan pertama kali adalah “batal”, maka berapa kali perulangan dilakukan?
+
+Perulangan dilakukan sebanyak 1 kali.
+
+2. Sebutkan kondisi berhenti yang digunakan pada perulangan DO-WHILE tersebut!
+3. Apa fungsi dari penggunaan nilai true pada kondisi DO-WHILE?
+4. Mengapa perulangan DO-WHILE tersebut tetap berjalan meskipun tidak ada komponen inisialisasi dan update?
