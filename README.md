@@ -44,3 +44,14 @@ Mengecek apakah nilai mahasiswa yang baru diinput lebih besar dari nilai terting
    mahasiswa yang lulus dan yang tidak lulus berdasarkan batas kelulusan (nilai minimal 60).
    Tampilkan jumlah mahasiswa lulus dan tidak lulus setelah menampilkan nilai tertinggi
    dan terendah!
+
+saya menambahkan
+```
+int lulus = 0, tidak_lulus = 0;
+
+if (nilai>=60) lulus++;
+else tidak_lulus++;
+
+System.out.println("Jumlah Mahasiswa lulus: " + lulus);
+System.out.println("Jumlah Mahasiswa tidak lulus: " + tidak_lulus);
+```
