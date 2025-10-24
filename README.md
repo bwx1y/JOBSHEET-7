@@ -69,5 +69,11 @@ di gunakan untuk melakukan validasi hanya nilai antara 0 - 100 saja yang bisa di
 di gunakan untuk melakukan pelanjutan perulangan / melakukan skip
 
 2. Mengapa sintaks i++ dituliskan di akhir perulangan WHILE? Apa yang terjadi jika posisinya dituliskan di awal perulangan WHILE?
+
+Setiap kali perulangan selesai memproses satu mahasiswa, baru kita ingin menambah jumlah hitungan mahasiswa. increment dilakukan setelah 1 data selesai diproses, bukan sebelum. ketika i di ubah ke atas Akan terjadi pergeseran nomor mahasiswa, atau bahkan satu mahasiswa tidak diproses.
+
 3. Apabila jumlah mahasiswa yang dimasukkan adalah 19, berapa kali perulangan WHILE akan berjalan?
+
+
 4. Modifikasi kode program sehingga apabila terdapat mahasiswa yang mendapat nilai A, program menampilkan pesan tambahan "Bagus, pertahankan nilainya"!
+
