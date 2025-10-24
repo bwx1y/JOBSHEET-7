@@ -90,5 +90,14 @@ System.out.println("Bagus, pertahankan nilainya");
 Perulangan dilakukan sebanyak 1 kali.
 
 2. Sebutkan kondisi berhenti yang digunakan pada perulangan DO-WHILE tersebut!
+
+Kondisi berhenti ditentukan oleh dan inputan yang di inputkan 'batal':
+```
+if (namaPelanggan.equalsIgnoreCase("batal")) {
+    System.out.println("Transaksi dibatalkan.");
+    break;
+}
+```
+
 3. Apa fungsi dari penggunaan nilai true pada kondisi DO-WHILE?
 4. Mengapa perulangan DO-WHILE tersebut tetap berjalan meskipun tidak ada komponen inisialisasi dan update?
