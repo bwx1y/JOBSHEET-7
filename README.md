@@ -74,6 +74,7 @@ Setiap kali perulangan selesai memproses satu mahasiswa, baru kita ingin menamba
 
 3. Apabila jumlah mahasiswa yang dimasukkan adalah 19, berapa kali perulangan WHILE akan berjalan?
 
+maka akan di jalan sebanyak 19 kali mulai dari 0 - 18
 
 4. Modifikasi kode program sehingga apabila terdapat mahasiswa yang mendapat nilai A, program menampilkan pesan tambahan "Bagus, pertahankan nilainya"!
 
