@@ -38,6 +38,7 @@ Jika semua nilai mahasiswa lebih dari 0, maka nilai terendah tidak akan pernah d
 
 3. Jelaskan fungsi dan alur kerja dari potongan kode berikut!
 
+Mengecek apakah nilai mahasiswa yang baru diinput lebih besar dari nilai tertinggi saat ini dan Mengecek apakah nilai mahasiswa yang baru diinput lebih kecil dari nilai terendah saat ini.
 
 4. Modifikasi kode program sehingga terdapat perhitungan untuk menentukan berapa
    mahasiswa yang lulus dan yang tidak lulus berdasarkan batas kelulusan (nilai minimal 60).
