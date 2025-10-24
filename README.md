@@ -100,4 +100,7 @@ if (namaPelanggan.equalsIgnoreCase("batal")) {
 ```
 
 3. Apa fungsi dari penggunaan nilai true pada kondisi DO-WHILE?
+
+Nilai true membuat perulangan berjalan terus menerus (infinite loop) sampai ada perintah break di dalam blok yang menghentikannya.
+
 4. Mengapa perulangan DO-WHILE tersebut tetap berjalan meskipun tidak ada komponen inisialisasi dan update?
