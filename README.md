@@ -106,3 +106,80 @@ Nilai true membuat perulangan berjalan terus menerus (infinite loop) sampai ada 
 4. Mengapa perulangan DO-WHILE tersebut tetap berjalan meskipun tidak ada komponen inisialisasi dan update?
 
 Karena perulangan dikontrol oleh kondisi while(true) dan dihentikan secara manual oleh perintah break, bukan oleh variabel penghitung atau kondisi yang berubah.
+
+## 3. Tugas
+
+1. Seorang pengelola bioskop ingin membuat program untuk menghitung total penjualan tiket dalam satu hari. Tiket dijual dengan harga Rp 50.000 per tiket. Program harus menghitung total tiket yang terjual dan total harga penjualan tiket selama satu hari dengan ketentuan sebagai berikut:
+
+   • Jika pelanggan membeli lebih dari 4 tiket, pelanggan mendapatkan diskon 10%.
+
+   • Jika pelanggan membeli lebih dari 10 tiket, pelanggan mendapatkan diskon 15%
+
+   • Jika input jumlah tiket tidak valid (negatif), program akan mengabaikan input tersebut dan meminta input ulang.
+
+```java
+import java.util.Scanner;
+
+public class KafeDoWhile18 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int kopi, teh, roti, hargaKopi = 12_000, hargaTeh = 7_000, hargaRoti = 20_000, totalHarga;
+        String namaPelanggan;
+
+        do {
+            System.out.print("Masukkan nama pelanggan (ketik 'batal' untuk keluar): ");
+            namaPelanggan = sc.nextLine();
+            if (namaPelanggan.equalsIgnoreCase("batal")) {
+                System.out.println("Transaksi dibatalkan.");
+                break;
+            }
+            System.out.print("Jumlah kopi: ");
+            kopi = sc.nextInt();
+            System.out.print("Jumlah teh: ");
+            teh = sc.nextInt();
+            System.out.print("Jumlah roti: ");
+            roti = sc.nextInt();
+
+            totalHarga = (kopi* hargaKopi) + (teh * hargaTeh) + (roti * hargaRoti);
+            System.out.println("Total yang harus dibayar: Rp "+ totalHarga);
+            sc.nextLine();
+        } while (true);
+
+        System.out.println("Semua transaksi selesai.");
+    }
+}
+```
+
+2. Sebuah tempat parkir ingin membuat program untuk menghitung total pembayaran parkir dari beberapa kendaraan. Tarif parkir adalah Rp 3.000 per jam untuk mobil dan Rp 2.000 per jam untuk motor. Namun, jika durasi parkir lebih dari 5 jam, diberikan tarif tetap sebesar Rp 12.500 untuk semua kendaraan. Program akan terus meminta masukan selama input bukan 0. Implementasikan flowchart tersebut ke dalam bentuk kode program Java!
+
+```java
+import java.util.Scanner;
+
+public class TempatParkir {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int total = 0;
+
+        while (true) {
+            System.out.println("Masukan jenis kendaraan : \n1. Mobil \n2. Motor \n0. Keluar");
+            System.out.print("Pilihan: ");
+
+            int jenis = sc.nextInt();
+            if (jenis == 0) break;
+
+            if (jenis == 1 || jenis == 2) {
+                System.out.print("Masukan Durasi: ");
+                int durasi = sc.nextInt();
+
+                if (durasi > 5) total += 12_500;
+                else if (jenis == 1) total += durasi * 3_000;
+                else total += durasi * 2_000;
+            }
+        }
+
+        System.out.printf("Total pembayaran : Rp.%,d %n", total);
+        System.out.println("Terimakasih telah menggunakan aplikasi ini");
+    }
+}
+```
